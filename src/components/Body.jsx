@@ -10,7 +10,7 @@ class Body extends React.Component {
           key={rowIndex}
           columns={this.props.columns}
           data={item}
-          index={rowIndex}
+          index={rowIndex.toString()}
           onRowClick={this.props.onRowClick}
         />
       ));
