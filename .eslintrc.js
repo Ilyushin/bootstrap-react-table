@@ -15,6 +15,8 @@ module.exports = {
     StripeCheckout: true,
   },
   rules: {
+    'react/prefer-stateless-function': 'off',
+    'react/destructuring-assignment': 'off',
     'no-console': 'error',
     'react/jsx-key': 'error',
     'react/display-name': ['error', { ignoreTranspilerName: true }],

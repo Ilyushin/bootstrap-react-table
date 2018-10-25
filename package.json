@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-react-table",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "A table componenet which bases on Bootstrap 4 and React",
   "main": "./lib/index.js",
   "scripts": {
