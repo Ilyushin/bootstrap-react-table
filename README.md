@@ -8,6 +8,7 @@ npm install bootstrap-react-table --save
 
 Example:
 ```
+import React from 'react';
 import BootstrapTable from 'bootstrap-react-table';
 
 const columns = [
@@ -34,14 +35,24 @@ const data = [
     }
 ]
 
-function onRowClick (e, index){
-    console.log(index)
-}
+class Table extends React.Component {
+    constructor () {
+        super();
+        this.onRowClick = this.onRowClick.bind(this);
+    }
+    
+    onRowClick (e, index){
+        console.log(index)
+    }
 
-export default () => 
-    (<BootstrapTable 
-        columns={columns} 
-        data={data} 
-        onRowClick={onRowClick} 
-    />);
+    return (
+        <div>
+            <BootstrapTable 
+                columns={columns} 
+                data={data} 
+                onRowClick={this.onRowClick} 
+            />
+        </div>
+    );
+}
 ```
